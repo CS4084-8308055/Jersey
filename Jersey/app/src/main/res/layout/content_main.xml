@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,13 +9,38 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ImageView
+        android:id="@+id/imageViewJersey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/green_jersey"
+        />
     <TextView
+        android:id="@+id/textViewNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignLeft="@+id/imageViewJersey"
+        android:layout_alignTop="@+id/imageViewJersey"
+        android:layout_alignRight="@+id/imageViewJersey"
+        android:layout_alignBottom="@+id/imageViewJersey"
+        android:layout_margin="1dp"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/shirttextcolor" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewJersey"
+        android:layout_alignTop="@+id/imageViewJersey"
+        android:layout_alignRight="@+id/imageViewJersey"
+        android:layout_alignBottom="@+id/imageViewJersey"
+        android:layout_marginTop="170dp"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:text="@string/name_default"
+        android:textColor="@color/shirttextcolor" />
+</RelativeLayout>
