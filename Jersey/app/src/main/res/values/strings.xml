@@ -8,4 +8,11 @@
     <string name="home_default">true</string>
     <string name="name_format">%s</string>
     <string name="number_format">%d</string>
+    <string name="update_jersey_info">Update Jersey Info</string>
+    <string name="name">Name</string>
+    <string name="player_name">Player name</string>
+    <string name="number">Number</string>
+    <string name="player_number">Player Number</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
 </resources>
