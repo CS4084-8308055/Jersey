@@ -8,7 +8,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/dialog_title_margin"
         android:text="@string/update_jersey_info" />
     <TextView
         android:layout_width="match_parent"
